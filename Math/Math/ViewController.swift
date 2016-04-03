@@ -127,8 +127,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func start(sender: AnyObject) {
         
+        timer.invalidate()
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("timerResult"), userInfo: nil, repeats: true)
-        
         
     }
 
